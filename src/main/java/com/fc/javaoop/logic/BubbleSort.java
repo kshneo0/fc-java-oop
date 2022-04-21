@@ -8,9 +8,11 @@ import java.util.List;
  * author :  KimSangHoon
  * date : 2022/04/21
  */
-public class BubbleSort<T extends Comparable<T>> {
+public class BubbleSort<T extends Comparable<T>> implements Sort<T>{
 
+    @Override
     public List<T> sort(List<T> list) {
+
         List<T> output = new ArrayList<>(list);
 
         for (int i = output.size() - 1; i > 0; i--) {
